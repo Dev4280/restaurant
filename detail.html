@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* General reset for box-sizing */
+        * {
+          box-sizing: border-box;
+        }
+    
+        /* Container for fieldsets */
+        .container {
+          display: flex; /* Enables flexbox layout */
+          justify-content: space-between; /* Creates space between the fieldsets */
+          align-items: flex-start; /* Aligns fieldsets to the top */
+          padding: 20px; /* Adds spacing around the container */
+          gap: 20px; /* Adds space between fieldsets */
+        }
+    
+        /* Styling for each fieldset */
+        fieldset.places {
+          width: fit-content; /* Adjusts the width to the content */
+          padding: 20px; /* Adds padding for aesthetics */
+          border: 1px solid #ccc; /* Optional border styling */
+          border-radius: 5px; /* Rounded corners */
+          text-align: center; /* Centers content inside the fieldset */
+        }
+    
+        /* Additional styling for the select box */
+        select[name="state"] {
+          padding: 5px;
+          font-size: 1rem;
+        }
+      </style>
 </head>
 <body>
     <header class="detail">
